@@ -22,6 +22,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 * {
@@ -39,4 +42,41 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 2rem 0;
+}
+
+.brand-logo {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 0;
+    transform: none;
+  }
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-panel:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 
+             0 3px 14px 2px rgba(0,0,0,0.12), 
+             0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.page-footer {
+  margin-top: 2rem;
+}
+
+.input-field .prefix {
+  font-size: 1.5rem;
 }
