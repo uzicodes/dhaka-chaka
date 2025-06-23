@@ -9,7 +9,7 @@ export default function About() {
             <div className="card-content">
               <span className="card-title">Our Story</span>
               <p className="flow-text">
-                Dhaka Chaka is a modern web application built with Next.js and styled with Materialize CSS.
+                go-dhaka is a modern web application built with Next.js and styled with Materialize CSS.
                 We believe in creating beautiful, responsive, and user-friendly applications.
               </p>
             </div>

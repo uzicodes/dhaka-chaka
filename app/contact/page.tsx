@@ -99,7 +99,7 @@ export default function Contact() {
           <div className="card-panel">
             <i className="material-icons large blue-text">email</i>
             <h5>Email</h5>
-            <p>info@dhakachaka.com</p>
+            <p>info@go-dhaka.com</p>
           </div>
         </div>
       </div>
