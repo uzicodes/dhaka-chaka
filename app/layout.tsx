@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GrHomeRounded } from "react-icons/gr";
+import { IoPaperPlane } from "react-icons/io5";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +31,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" async></script>
       </head>
       <body className={inter.className}>
@@ -36,13 +40,13 @@ export default function RootLayout({
         <nav className="modern-navbar">
           <div className="nav-wrapper container">
             <a href="/" className="brand-logo" style={{display: 'flex', alignItems: 'center'}}>
-              <img src="/globe.svg" alt="go-dhaka logo" style={{height: '36px', marginRight: '12px'}} />
-              go-dhaka
+              <img src="/logo.png" alt="go-dhaka logo" style={{height: '36px', marginRight: '12px'}} />
+              <span style={{fontFamily: 'EB Garamond, serif', fontWeight: 700}}>go-dhaka</span>
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down modern-nav-links">
-              <li><a href="/">Home</a></li>
+              <li><a href="/"><GrHomeRounded size={22} /></a></li>
               <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/contact"><IoPaperPlane size={22} /></a></li>
             </ul>
           </div>
         </nav>
@@ -53,16 +57,32 @@ export default function RootLayout({
           <div className="container modern-footer-content">
             <div>
               <h5 className="white-text">go-dhaka</h5>
-              <p className="grey-text text-lighten-4">Your awesome Next.js app with Materialize CSS.</p>
+              
             </div>
-            <div className="modern-footer-social">
-              <a href="#" aria-label="Twitter"><img src="/globe.svg" alt="Twitter" style={{height: '28px'}} /></a>
-              <a href="#" aria-label="GitHub"><img src="/window.svg" alt="GitHub" style={{height: '28px'}} /></a>
+            <div className="modern-footer-social" style={{display: 'flex', gap: '0.5rem'}}>
+              <button className="Btn instagram" aria-label="Instagram">
+                <span className="svgIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.131 4.602.425 3.635 1.392 2.668 2.359 2.374 3.532 2.315 4.809 2.256 6.089 2.243 6.498 2.243 12s.013 5.911.072 7.191c.059 1.277.353 2.45 1.32 3.417.967.967 2.14 1.261 3.417 1.32C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.059 2.45-.353 3.417-1.32.967-.967 1.261-2.14 1.32-3.417.059-1.28.072-1.689.072-7.191s-.013-5.911-.072-7.191c-.059-1.277-.353-2.45-1.32-3.417C19.398.425 18.225.131 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </span>
+                <span className="text">Instagram</span>
+              </button>
+              <button className="Btn youtube" aria-label="YouTube">
+                <span className="svgIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.112C19.458 3.5 12 3.5 12 3.5s-7.458 0-9.386.574A2.994 2.994 0 0 0 .502 6.186C0 8.114 0 12 0 12s0 3.886.502 5.814a2.994 2.994 0 0 0 2.112 2.112C4.542 20.5 12 20.5 12 20.5s7.458 0 9.386-.574a2.994 2.994 0 0 0 2.112-2.112C24 15.886 24 12 24 12s0-3.886-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </span>
+                <span className="text">YouTube</span>
+              </button>
+              <button className="Btn twitter" aria-label="Twitter">
+                <span className="svgIcon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 0 0-8.38 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.856 2.01-.857 3.17 0 2.188 1.115 4.117 2.823 5.247a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.058 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z"/></svg>
+                </span>
+                <span className="text">Twitter</span>
+              </button>
             </div>
           </div>
           <div className="modern-footer-copyright">
             <div className="container">
-              © 2024 go-dhaka
+              © 2025 go-dhaka
             </div>
           </div>
         </footer>
