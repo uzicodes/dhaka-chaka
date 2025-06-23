@@ -28,13 +28,18 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" async></script>
       </head>
       <body className={inter.className}>
-        <nav className="blue darken-2">
+        <div className="modern-bg"></div>
+        <nav className="modern-navbar">
           <div className="nav-wrapper container">
-            <a href="/" className="brand-logo">go-dhaka</a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <a href="/" className="brand-logo" style={{display: 'flex', alignItems: 'center'}}>
+              <img src="/globe.svg" alt="go-dhaka logo" style={{height: '36px', marginRight: '12px'}} />
+              go-dhaka
+            </a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down modern-nav-links">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Contact</a></li>
@@ -44,16 +49,18 @@ export default function RootLayout({
         <main className="container">
           {children}
         </main>
-        <footer className="page-footer blue darken-2">
-          <div className="container">
-            <div className="row">
-              <div className="col l6 s12">
-                <h5 className="white-text">go-dhaka</h5>
-                <p className="grey-text text-lighten-4">Your awesome Next.js app with Materialize CSS.</p>
-              </div>
+        <footer className="modern-footer">
+          <div className="container modern-footer-content">
+            <div>
+              <h5 className="white-text">go-dhaka</h5>
+              <p className="grey-text text-lighten-4">Your awesome Next.js app with Materialize CSS.</p>
+            </div>
+            <div className="modern-footer-social">
+              <a href="#" aria-label="Twitter"><img src="/globe.svg" alt="Twitter" style={{height: '28px'}} /></a>
+              <a href="#" aria-label="GitHub"><img src="/window.svg" alt="GitHub" style={{height: '28px'}} /></a>
             </div>
           </div>
-          <div className="footer-copyright">
+          <div className="modern-footer-copyright">
             <div className="container">
               © 2024 go-dhaka
             </div>

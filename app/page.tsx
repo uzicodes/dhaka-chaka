@@ -6,7 +6,7 @@ export default function Home() {
     <div className="section">
       {/* Hero Section */}
       <div className="row center-align" style={{ marginTop: '2rem' }}>
-        <h1 className="header">Welcome to go-dhaka</h1>
+        <h1 className="header" style={{ color: '#111', fontFamily: 'Bebas Neue, Arial, sans-serif', letterSpacing: '2px' }}>Welcome to go-dhaka</h1>
         <h5 className="grey-text">Your Next.js Journey Starts Here</h5>
         <a href="/about" className="waves-effect waves-light btn-large blue">
           <i className="material-icons left">info</i>
