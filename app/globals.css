@@ -104,13 +104,27 @@ main {
   align-items: center;
 }
 
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.modern-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
 .modern-nav-links li a {
   color: #111;
   font-weight: 500;
   font-family: 'EB Garamond', Arial, sans-serif;
   transition: color 0.2s, background 0.2s;
-  border-radius: 6px;
-  padding: 0 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 .modern-nav-links li a:hover {
   background: #e0e7ff;
@@ -246,3 +260,50 @@ main {
 .svgIcon path {
   fill: white;
 }
+
+/* Neon navbar button styles */
+.nav-btn-neon {
+  background: transparent;
+  color: #00ff88;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 14px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s, color 0.3s;
+  z-index: 1;
+}
+
+.nav-btn-neon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.2), transparent);
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.nav-btn-neon:hover::before {
+  left: 100%;
+}
+
+.nav-btn-neon:hover {
+  box-shadow: 0 0 10px #00ff88, inset 0 0 10px rgba(0, 255, 136, 0.1);
+  color: #111;
+}
+
+.nav-btn-neon svg {
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+
+

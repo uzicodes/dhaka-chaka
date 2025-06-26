@@ -39,15 +39,19 @@ export default function RootLayout({
         <div className="modern-bg"></div>
         <nav className="modern-navbar">
           <div className="nav-wrapper container">
-            <a href="/" className="brand-logo" style={{display: 'flex', alignItems: 'center'}}>
-              <img src="/logo.png" alt="go-dhaka logo" style={{height: '36px', marginRight: '12px'}} />
-              <span style={{fontFamily: 'EB Garamond, serif', fontWeight: 700}}>go-dhaka</span>
-            </a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down modern-nav-links">
-              <li><a href="/"><GrHomeRounded size={22} /></a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact"><IoPaperPlane size={22} /></a></li>
-            </ul>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+              <a href="/" className="brand-logo" style={{display: 'flex', alignItems: 'center'}}>
+                <img src="/logo.png" alt="go-dhaka logo" style={{height: '36px', marginRight: '12px'}} />
+                <span style={{fontFamily: 'EB Garamond, serif', fontWeight: 700}}>go-dhaka</span>
+              </a>
+            </div>
+            <div>
+              <ul id="nav-mobile" className="hide-on-med-and-down modern-nav-links">
+                <li><a href="/" className="nav-btn-neon"><img src="/home.png" alt="Home" style={{height: '30px', width: '30px', objectFit: 'contain'}} /></a></li>
+                <li><a href="/about" className="nav-btn-neon"><img src="/about_us.png" alt="About Us" style={{height: '22px', width: '22px', objectFit: 'contain'}} /></a></li>
+                <li><a href="/contact" className="nav-btn-neon"><IoPaperPlane size={22} /></a></li>
+              </ul>
+            </div>
           </div>
         </nav>
         <main className="container">
