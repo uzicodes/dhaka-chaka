@@ -48,7 +48,7 @@ export default function RootLayout({
             <div>
               <ul id="nav-mobile" className="hide-on-med-and-down modern-nav-links">
                 <li><a href="/" className="nav-btn-neon"><img src="/home.png" alt="Home" style={{height: '30px', width: '30px', objectFit: 'contain'}} /></a></li>
-                <li><a href="/about" className="nav-btn-neon"><img src="/about_us.png" alt="About Us" style={{height: '22px', width: '22px', objectFit: 'contain'}} /></a></li>
+                <li><a href="/about" className="nav-btn-neon"><img src="/about_us.png" alt="About Us" style={{height: '30px', width: '30px', objectFit: 'contain'}} /></a></li>
                 <li><a href="/contact" className="nav-btn-neon"><IoPaperPlane size={22} /></a></li>
               </ul>
             </div>
