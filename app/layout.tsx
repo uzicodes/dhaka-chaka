@@ -58,12 +58,8 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="modern-footer">
-          <div className="container modern-footer-content">
-            <div>
-              <h5 className="white-text">go-dhaka</h5>
-              
-            </div>
-            <div className="modern-footer-social" style={{display: 'flex', gap: '0.5rem'}}>
+          <div className="container modern-footer-content" style={{ justifyContent: 'center' }}>
+            <div className="modern-footer-social" style={{display: 'flex', gap: '0.5rem', justifyContent: 'center'}}>
               <button className="Btn instagram" aria-label="Instagram">
                 <span className="svgIcon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.131 4.602.425 3.635 1.392 2.668 2.359 2.374 3.532 2.315 4.809 2.256 6.089 2.243 6.498 2.243 12s.013 5.911.072 7.191c.059 1.277.353 2.45 1.32 3.417.967.967 2.14 1.261 3.417 1.32C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.059 2.45-.353 3.417-1.32.967-.967 1.261-2.14 1.32-3.417.059-1.28.072-1.689.072-7.191s-.013-5.911-.072-7.191c-.059-1.277-.353-2.45-1.32-3.417C19.398.425 18.225.131 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
@@ -88,11 +84,6 @@ export default function RootLayout({
                 </span>
                 <span className="text">GitHub</span>
               </button>
-            </div>
-          </div>
-          <div className="modern-footer-copyright">
-            <div className="container">
-              © 2025 go-dhaka
             </div>
           </div>
         </footer>
