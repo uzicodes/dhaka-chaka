@@ -12,7 +12,7 @@ export default function BusPage() {
         top: '95%', 
         fontSize: '18px',
         fontWeight: 500,
-        color: '#333'
+        color: '#914C07'
       }}>
         where you at ?
       </div>
@@ -25,7 +25,7 @@ export default function BusPage() {
         top: '95%', 
         fontSize: '18px',
         fontWeight: 500,
-        color: '#333'
+        color: '#914C07'
       }}>
         where you going ?
       </div>

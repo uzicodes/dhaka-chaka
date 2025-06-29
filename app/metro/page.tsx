@@ -13,7 +13,7 @@ export default function MetroPage() {
         top: '95%', 
         fontSize: '18px',
         fontWeight: 500,
-        color: '#333'
+        color: '#914C07'
       }}>
         station you're at ?
       </div>
@@ -26,7 +26,7 @@ export default function MetroPage() {
         top: '95%', 
         fontSize: '18px',
         fontWeight: 500,
-        color: '#333'
+        color: '#914C07'
       }}>
         station you're going ?
       </div>
