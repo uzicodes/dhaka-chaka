@@ -5,14 +5,11 @@ import { Bus, Train } from 'lucide-react';
 import React, { useEffect, useState } from "react";
 
 const HOMEPAGE_IMAGES = [
-  "/homepage img/ahsan majil.jpg",
-  "/homepage img/dhakeshwari.jpg",
-  "/homepage img/licensed-image.jpg",
-  "/homepage img/licensed-image (1).jpg",
-  "/homepage img/licensed-image (2).jpg",
-  "/homepage img/licensed-image (3).jpg",
-  "/homepage img/parliament.jpg",
-  "/homepage img/unnamed.jpg",
+  "/homepage img/1.jpg",
+  "/homepage img/2.jpg",
+  "/homepage img/3.jpg",
+  "/homepage img/4.jpg",
+  "/homepage img/5.jpg",
 ];
 
 export default function Home() {
