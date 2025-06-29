@@ -65,7 +65,7 @@ export default function Home() {
           what do you prefer to go with today ?
         </div>
         {/* Travel Options */}
-        <div className="row center-align" style={{ marginTop: '3rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+        <div className="row center-align" style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
           {/* Bus Option */}
           <div className="card" style={{ width: '260px' }}>
             <div className="card__shine"></div>

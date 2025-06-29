@@ -1,8 +1,7 @@
 export default function MetroPage() {
   return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>Metro Rail Page</h1>
-      <p>Welcome to the Metro Rail information page.</p>
+    <div style={{ padding: '0rem', textAlign: 'center' }}>
+      <h1 style={{ fontFamily: 'Alumni Sans SC', fontWeight: 515, color: 'black' }}>Dhaka Metro-Rail</h1>
     </div>
   );
 } 
