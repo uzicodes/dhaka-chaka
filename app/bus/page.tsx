@@ -397,16 +397,7 @@ export default function BusPage() {
         maxHeight: 'none',
         overflowY: 'visible'
       }}>
-        {!hasSearched ? (
-          <div style={{
-            textAlign: 'center',
-            color: '#666',
-            fontSize: '18px',
-            padding: '2rem'
-          }}>
-            Select your current location and destination, then click Search Buses
-          </div>
-        ) : hasSearched && (
+        {hasSearched && (
           <div>
 
             {matchingBuses.map((bus) => (
@@ -431,7 +422,7 @@ export default function BusPage() {
                   <div style={{ flex: 1 }}>
                     <h4 style={{ 
                       margin: '0 0 0.5rem 0', 
-                      color: '#FEBF00', 
+                      color: 'red', 
                       fontSize: '20px',
                       fontWeight: 'bold'
                     }}>
